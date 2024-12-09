@@ -1,0 +1,128 @@
+$negro: rgba(24, 24, 24, 1)
+$negro50: rgba(60, 60, 60, 0.5)
+$negro10: rgba(35, 35, 35, 0.1)
+$blanco: rgba(255, 255, 255, 1)
+$blanco50: rgba(255, 255, 255, 0.5)
+$blanco20: rgba(255, 255, 255, 0.2)
+
+*
+  border-radius: 4px
+  border: none
+  box-sizing: border-box 
+  color: $blanco50       
+
+body
+  background-color: $negro
+
+.divider
+  border: none
+  border-top: 2px solid $blanco20
+  width: 100%
+
+.todo-container
+  max-width: 512px
+  margin: 0 auto 
+  padding: 0 24px 
+  width: 100% 
+  box-sizing: border-box 
+
+.boton
+  background: transparent
+  color: white
+  border: 1px solid $blanco50
+  padding: 8px 16px
+  height: 48px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  text-align: center
+  transition: background-color 0.3s ease, border-color 0.3s ease
+
+  &:hover
+    background-color: rgba(255, 255, 255, 0.1) 
+    border-color: white
+
+.btn-icono
+  font-family: 'Roboto', sans-serif
+  font-size: 24px
+  padding: 8px
+  width: 48px
+  height: 48px
+
+svg, i
+    border: none
+    background: transparent
+    outline: none
+    box-shadow: none
+
+.task-input
+  flex: 1
+  padding: 8px
+  border: none
+  background: transparent
+  color: $blanco
+  font-family: 'Roboto', sans-serif
+  font-size: 24px
+
+.title
+  color:$blanco
+  font-family: 'Roboto', sans-serif
+  font-size: 36px
+
+.task-item
+  display: flex
+  align-items: center
+  gap: 8px
+  background-color: $blanco20
+  padding: 8px
+
+  .task-checkbox
+    width: 24px
+    height: 24px
+    border: 2px solid $blanco
+    box-sizing: border-box
+    margin-right: 8px
+    background-color: transparent
+    appearance: none
+
+  .task-label
+    flex-grow: 1
+    font-family: 'Roboto', sans-serif
+    font-size: 24px
+    color: $blanco
+    text-align: left
+
+  .delete-button
+    display: flex
+    gap: 8px
+    margin-left: auto
+
+.task-list
+  padding: 0
+  margin: 0
+  list-style: none
+  display: flex
+  flex-direction: column
+  gap: 8px
+
+.task-checkbox:checked + .task-label 
+    text-decoration: line-through
+
+.todo-input
+  display: flex
+  gap: 8px
+  padding: 8px
+  box-sizing: border-box
+  background-color: $negro50
+
+
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  margin-boton: 8px
+
+
+
